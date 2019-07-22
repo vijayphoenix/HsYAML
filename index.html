@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HsYAML - YAML 1.2 parser </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Vijay Tadikamalla">
+    <meta name="description" content="Convert valid YAML 1.2 document to JSON">
+    <meta name="keywords" content="HsYAML, yaml, parser, Haskell, yaml to json converter">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="codemirror.css">
+    <link rel="stylesheet" href="demo.css">
+
+    <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
+    <script src="demo.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1> Online YAML to JSON converter </h1>
+    </div>
+    <div class="content">
+      <div class="src">
+        <h4 class="subheader"><a href="#" id="permalink">permalink</a> YAML:</h4>
+        <textarea id="source">---
+map:
+  Block style: !!map
+    Clark : Evans
+    Ingy  : döt Net
+    Oren  : Ben-Kiki
+
+        </textarea>
+      </div>
+      <div class="dst">
+        <h4 class="subheader"> JSON: </h4>
+        <textarea id="result"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
